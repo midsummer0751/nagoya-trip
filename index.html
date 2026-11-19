@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가족여행2 나고야 11/29-12/02</title>
+<style>
+* { box-sizing:border-box; margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",sans-serif; }
+body { background-color:#f8fafc; color:#1e293b; padding:20px; }
+.container { max-width:840px; margin:0 auto; }
+
+/* 상단 헤더 */
+header { background:linear-gradient(135deg,#1e3a8a,#3b82f6); color:white; padding:28px 20px; border-radius:16px; margin-bottom:16px; text-align:center; box-shadow:0 4px 12px rgba(37,99,235,0.15); }
+header h1 { font-size:1.75rem; margin-bottom:6px; letter-spacing:-0.5px; }
+header p { font-size:0.95rem; opacity:0.9; }
+
+/* 탭 버튼 바 */
+.tab-menu { display:flex; gap:8px; margin-bottom:16px; overflow-x:auto; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); padding:8px; border-radius:14px; border:1px solid #e2e8f0; position:sticky; top:10px; z-index:100; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
+.tab-btn { flex:1; min-width:92px; padding:10px 12px; border:none; border-radius:10px; background:#f1f5f9; color:#475569; font-weight:700; font-size:0.9rem; cursor:pointer; transition:all 0.2s; white-space:nowrap; }
+.tab-btn:hover { background:#eff6ff; color:#2563eb; }
+.tab-btn.active { background:#2563eb; color:white; box-shadow:0 3px 8px rgba(37,99,235,0.3); }
+
+/* 외부 HTML을 띄우는 프레임 */
+.frame-box { width:100%; border:none; min-height:80vh; background:transparent; display:block; }
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>🇯🇵 가족여행2 나고야 11/29-12/02</h1>
+        <p>4인 가족 나고야 여행 상세 타임라인 & 이동 가이드</p>
+    </header>
+
+    <div class="tab-menu">
+        <button class="tab-btn active" onclick="openFile('day1.html', this)">DAY 1 (11/29)</button>
+        <button class="tab-btn" onclick="openFile('day2.html', this)">DAY 2 (11/30)</button>
+        <button class="tab-btn" onclick="openFile('day3.html', this)">DAY 3 (12/01)</button>
+        <button class="tab-btn" onclick="openFile('day4.html', this)">DAY 4 (12/02)</button>
+        <button class="tab-btn" onclick="openFile('summary.html', this)">💰 전체 경비</button>
+    </div>
+
+    <iframe id="viewer" class="frame-box" src="day1.html" onload="fitHeight(this)"></iframe>
+</div>
+
+<script>
+function openFile(fileName, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const frame = document.getElementById('viewer');
+    frame.src = fileName;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function fitHeight(frame) {
+    setTimeout(() => {
+        try {
+            const innerHeight = frame.contentWindow.document.documentElement.scrollHeight;
+            frame.style.height = (innerHeight + 30) + 'px';
+        } catch (e) {
+            frame.style.height = '2400px';
+        }
+    }, 100);
+}
+</script>
+</body>
+</html>
