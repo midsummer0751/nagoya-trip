@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -217,3 +218,224 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { box-sizing:border-box; margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",sans-serif; }
+body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
+.day-badge { display:inline-block; background:#2563eb; color:white; font-weight:bold; padding:6px 16px; border-radius:20px; font-size:0.95rem; margin-bottom:20px; }
+.timeline { position:relative; padding-left:28px; }
+.timeline::before { content:''; position:absolute; left:11px; top:8px; bottom:8px; width:3px; background:#cbd5e1; border-radius:2px; }
+.event-card { position:relative; background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:20px; margin-bottom:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03); }
+.event-card::before { content:''; position:absolute; left:-23px; top:24px; width:13px; height:13px; border-radius:50%; background:#2563eb; border:3px solid white; box-shadow:0 0 0 2px #2563eb; }
+.event-header { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
+.time-badge { background:#eff6ff; color:#2563eb; font-weight:700; padding:4px 10px; border-radius:8px; font-size:0.9rem; }
+.cost-badge { background:#fef3c7; color:#b45309; font-weight:700; padding:4px 10px; border-radius:8px; font-size:0.85rem; }
+.place-title { font-size:1.15rem; font-weight:700; margin-bottom:6px; }
+.place-desc { color:#64748b; font-size:0.92rem; margin-bottom:8px; }
+.place-img { width:100%; height:180px; object-fit:cover; border-radius:10px; margin-bottom:12px; background:#e2e8f0; }
+.menu-placeholder { border:1.5px dashed #94a3b8; background:#f8fafc; border-radius:10px; padding:10px 14px; color:#64748b; font-size:0.88rem; margin-top:8px; }
+.transit-box { background:#f1f5f9; border-left:4px solid #64748b; border-radius:10px; padding:14px 16px; margin-bottom:16px; font-size:0.88rem; }
+.transit-title { font-weight:700; color:#334155; margin-bottom:8px; }
+.transit-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+@media (max-width:600px) { .transit-grid { grid-template-columns:1fr; } }
+.transit-option { background:white; padding:10px 12px; border-radius:8px; border:1px solid #e2e8f0; }
+.transit-option strong { display:block; color:#1e293b; margin-bottom:3px; }
+.transit-meta { color:#2563eb; font-weight:600; font-size:0.85rem; }
+.timetable-box { background:#eff6ff; border-radius:8px; padding:10px 12px; margin-top:10px; font-size:0.85rem; }
+.timetable-box ul { margin-left:18px; margin-top:4px; color:#1e40af; }
+
+.expense-section { background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; padding:20px; margin-top:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04); }
+.expense-title { font-size:1.1rem; font-weight:800; color:#1e293b; margin-bottom:12px; }
+.expense-table { width:100%; border-collapse:collapse; font-size:0.9rem; }
+.expense-table th { background:#f1f5f9; color:#334155; font-weight:700; text-align:left; padding:10px 12px; border-bottom:2px solid #cbd5e1; }
+.expense-table td { padding:10px 12px; border-bottom:1px solid #e2e8f0; color:#1e293b; }
+.expense-table .amount { text-align:right; font-weight:700; color:#2563eb; white-space:nowrap; }
+.expense-table tr.subtotal-row { background:#eff6ff; font-weight:800; }
+.expense-table tr.subtotal-row td { border-top:2px solid #93c5fd; border-bottom:none; color:#1e3a8a; font-size:0.96rem; }
+
+</style>
+</head>
+<body>
+<div class="day-badge">📅 DAY 1 : 2026년 11월 29일 (일요일)</div>
+
+<div class="timeline">
+    <div class="event-card">
+        <div class="event-header"><span class="time-badge">10:20 출발</span></div>
+        <div class="place-title">🏠 집 출발</div>
+        <div class="place-desc">여권, 돼지코(110V 어댑터), 비짓재팬 QR코드, 면세품 교환권, 보조배터리 최종 확인 후 출발</div>
+    </div>
+
+    <div class="transit-box">
+        <div class="transit-title">🚗  → 청주국제공항 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚙 자차 이용 (추천 / 4인 기준)</strong><span class="transit-meta">약 1시간 10분 소요 / 3박4일 주차비 약 24,000~40,000원 + 통행료</span></div>
+            <div class="transit-option"><strong>🚌 대중교통 (평택대 정류장 공항버스)</strong><span class="transit-meta">약 1시간 10~20분 소요 / 4인 총 44,000원 (1인 11,000원)</span></div>
+        </div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header"><span class="time-badge">11:35 도착 ~ 13:55 이륙</span></div>
+        <img src="https://unsplash.com" alt="비행기" class="place-img">
+        <div class="place-title">🛫 청주국제공항 → 나고야 주부국제공항</div>
+        <div class="place-desc">11:35 공항 도착 및 주차 → 12:00 발권 및 수하물 위탁 → <strong>12:40 출국심사 및 면세품 인도</strong> → 13:30 탑승 완료 / <strong>13:55 ~ 15:40 비행</strong></div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">15:40 착륙 ~ 16:37 열차 탑승</span>
+            <span class="cost-badge">4인 교통비: 3,920엔 ~ 5,720엔</span>
+        </div>
+        <img src="https://unsplash.com" alt="일본 열차" class="place-img">
+        <div class="place-title">🚄 주부국제공항역 (메이테츠 공항선 탑승)</div>
+        <div class="place-desc">입국 심사 및 수하물 수령 후 메이테츠 역 이동</div>
+        <div class="timetable-box">
+            <strong>🕒 탑승 가능한 메이테츠 추천 열차 (나고야역 방면)</strong>
+            <ul>
+                <li><strong>16:17 특급</strong> (16:54 도착 / 37분 소요 / 1인 980엔)</li>
+                <li><strong>16:22 준급</strong> (17:08 도착 / 46분 소요 / 1인 980엔)</li>
+                <li><strong>16:37 뮤스카이 [추천]</strong> (17:06 도착 / 29분 소요 / 1인 1,430엔·전석지정)</li>
+                <li><strong>16:47 특급</strong> (17:24 도착 / 37분 소요 / 1인 980엔)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 주부국제공항 → 나고야역 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚆 대중교통 (메이테츠 뮤스카이)</strong><span class="transit-meta">29분 소요 / 4인 총 5,720엔 (일반특급 3,920엔)</span></div>
+            <div class="transit-option"><strong>🚕 택시 (일반 중형택시 1대)</strong><span class="transit-meta">약 45~50분 소요 / 약 15,000~18,000엔 (통행료 별도)</span></div>
+        </div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header"><span class="time-badge">17:06 도착 ~ 17:20 출발</span></div>
+        <div class="place-title">🚉 메이테쓰 나고야역 도착</div>
+        <div class="place-desc">역 내 출구 확인 후 숙소로 바로 이동</div>
+    </div>
+
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 나고야역 → Asobi Stay 郷前町 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 사쿠라도리선)</strong><span class="transit-meta">약 10분 (타이코도리역 하차 도보 4분) / 4인 840엔</span></div>
+            <div class="transit-option"><strong>🚕 택시 (캐리어 이동 시 추천)</strong><span class="transit-meta">약 6~7분 소요 / 1대 약 800~1,000엔</span></div>
+        </div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">17:30 도착 ~ 18:10 출발</span>
+            <span class="cost-badge">예상 비용: 2,400엔</span>
+        </div>
+        <img src="https://unsplash.com" alt="숙소" class="place-img">
+        <div class="place-title">🏡 Asobi Stay 郷前町 (체크인 및 짐 정리)</div>
+        <div class="place-desc">📍 일본 〒453-0808 아이치현 나고야시 나카무라구 고마에초 1조메 17-2</div>
+    </div>
+
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 숙소 → Fushimiya Bettei (야키니쿠) 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 사쿠라도리선)</strong><span class="transit-meta">약 15분 (국제센터역 하차 도보 3분) / 4인 840엔</span></div>
+            <div class="transit-option"><strong>🚕 택시 (문 앞까지 이동)</strong><span class="transit-meta">약 8~10분 소요 / 1대 약 1,100~1,400엔</span></div>
+        </div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">18:30 도착 ~ 20:15 출발</span>
+            <span class="cost-badge">예상 식비: 40,000엔</span>
+        </div>
+        <img src="https://unsplash.com" alt="와규 야키니쿠" class="place-img">
+        <div class="place-title">🥩 야키니쿠 : Fushimiya Bettei (후시미야 히다규 벳테이)</div>
+        <div class="place-desc">📍 나고야역 인근 / 프라이빗 룸에서 즐기는 히다규 만찬</div>
+        <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
+    </div>
+
+    <div class="transit-box">
+        <div class="transit-title">🗺️ Fushimiya Bettei → 세카이노야마짱 니시키산 오츠점 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 히가시야마선)</strong><span class="transit-meta">약 15분 (사카에역 하차 2번 출구 도보 2분) / 4인 840엔</span></div>
+            <div class="transit-option"><strong>🚕 택시 (4인 가족 추천)</strong><span class="transit-meta">약 8~10분 소요 / 1대 약 1,100~1,400엔</span></div>
+        </div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">20:35 예약(도착) ~ 21:50 출발</span>
+            <span class="cost-badge">예상 식비: 8,500엔</span>
+        </div>
+        <img src="https://unsplash.com" alt="닭날개 튀김" class="place-img">
+        <div class="place-title">🍗 세카이노야마짱 니시키산 오츠점 (20:35 예약 추천)</div>
+        <div class="place-desc">📍 아이치현 나고야시 나카구 니시키 3-15-1 2·3층 (전화: +81 52-971-2276) / ⚠️ 일요일 23:15 마감 (라스트오더 22:30)</div>
+        <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
+    </div>
+
+        <div class="transit-box">
+        <div class="transit-title">🗺️ 야마짱 → 돈키호테 사카에 본점 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚶 도보 이동 (최적 동선)</strong><span class="transit-meta">도보 약 2~3분 (약 200m 거리 / 0엔)</span></div>
+            <div class="transit-option"><strong>🚕 택시</strong><span class="transit-meta">도보 이동이 훨씬 빠름 (일방통행 구간)</span></div>
+        </div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header"><span class="time-badge">21:55 도착 ~ 23:05 출발</span></div>
+        <img src="https://unsplash.com" alt="쇼핑" class="place-img">
+        <div class="place-title">🐧 돈키호테 사카에 본점 (24시간 영업)</div>
+        <div class="place-desc">🛒 <strong>쇼핑 리스트:</strong> 치약, 칫솔, 위스키, 레몬사와, 레몬사와 잔, 과자 (여권 필수 지참)</div>
+    </div>
+
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 돈키호테 사카에 본점 → Asobi Stay 郷前町 복귀 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 환승)</strong><span class="transit-meta">약 22분 (사카에역→나고야역→타이코도리역) / 4인 960엔</span></div>
+            <div class="transit-option"><strong>🚕 택시 (4인 + 쇼핑 짐 추천)</strong><span class="transit-meta">약 13~15분 소요 / 1대 약 2,000~2,500엔 (심야할증 포함)</span></div>
+        </div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header"><span class="time-badge">23:25 도착</span></div>
+        <div class="place-title">🛌 Asobi Stay 郷前町 도착 및 가족 휴식</div>
+        <div class="place-desc">가족분들 먼저 숙소 도착 후 짐 정리 및 휴식</div>
+    </div>
+
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">23:30 출발 ~ 23:55 복귀</span>
+            <span class="cost-badge">예상 비용: 2,000엔</span>
+        </div>
+        <div class="place-title">🏪 숙소 인근 편의점 (1인 단독 방문)</div>
+        <div class="place-desc">🚶 숙소 주변 편의점 도보 왕복 (약 3~5분 / 0엔) / 야식, 음료, 다음 날 아침 간식 구매</div>
+    </div>
+</div>
+
+<div class="expense-section">
+    <div class="expense-title">📊 DAY 1 (11/29) 목적별 상세 경비 (4인 기준)</div>
+    <table class="expense-table">
+        <thead>
+            <tr><th style="width:22%;">구분</th><th>상세 내역</th><th style="width:26%; text-align:right;">예상 금액</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>🍽️ 식비</strong></td><td>야키니쿠(40,000) + 야마짱(8,500) + 편의점(2,000)</td><td class="amount">50,500엔</td></tr>
+            <tr>
+                <td><strong>🚆 교통비</strong></td>
+                <td>
+                    • <strong>추천 혼합(뮤스카이+시내택시): 약 10,500엔</strong><br>
+                    <span style="font-size:0.82rem; color:#64748b;">(전 구간 대중교통 시 약 8,400엔 / 시내 전 구간 택시 시 약 12,000엔)</span>
+                </td>
+                <td class="amount">10,500엔</td>
+            </tr>
+            <tr><td><strong>🎟️ 티켓/입장료</strong></td><td>1일차 해당 없음</td><td class="amount">0엔</td></tr>
+            <tr><td><strong>🛍️ 쇼핑/기타</strong></td><td>돈키호테 사카에 본점 쇼핑 (별도 예산)</td><td class="amount">별도</td></tr>
+            <tr class="subtotal-row"><td colspan="2">DAY 1 합계 (추천 이동 기준)</td><td class="amount" style="color:#1e3a8a;">61,000엔</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>
+>>>>>>> 50f1a76670a2a0f6c269c99785160f6722ad275d

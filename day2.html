@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -233,3 +234,240 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAY 2 - 11/30 나고야 일정</title>
+<style>
+* { box-sizing:border-box; margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",sans-serif; }
+body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
+.day-badge { display:inline-block; background:#2563eb; color:white; font-weight:bold; padding:6px 16px; border-radius:20px; font-size:0.95rem; margin-bottom:20px; }
+.timeline { position:relative; padding-left:28px; }
+.timeline::before { content:''; position:absolute; left:11px; top:8px; bottom:8px; width:3px; background:#cbd5e1; border-radius:2px; }
+.event-card { position:relative; background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:20px; margin-bottom:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03); }
+.event-card::before { content:''; position:absolute; left:-23px; top:24px; width:13px; height:13px; border-radius:50%; background:#2563eb; border:3px solid white; box-shadow:0 0 0 2px #2563eb; }
+.event-header { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
+.time-badge { background:#eff6ff; color:#2563eb; font-weight:700; padding:4px 10px; border-radius:8px; font-size:0.9rem; }
+.cost-badge { background:#fef3c7; color:#b45309; font-weight:700; padding:4px 10px; border-radius:8px; font-size:0.85rem; }
+.place-title { font-size:1.15rem; font-weight:700; margin-bottom:6px; }
+.place-desc { color:#64748b; font-size:0.92rem; margin-bottom:8px; }
+.place-img { width:100%; height:180px; object-fit:cover; border-radius:10px; margin-bottom:12px; background:#e2e8f0; }
+.menu-placeholder { border:1.5px dashed #94a3b8; background:#f8fafc; border-radius:10px; padding:10px 14px; color:#64748b; font-size:0.88rem; margin-top:8px; }
+.transit-box { background:#f1f5f9; border-left:4px solid #64748b; border-radius:10px; padding:14px 16px; margin-bottom:16px; font-size:0.88rem; }
+.transit-title { font-weight:700; color:#334155; margin-bottom:8px; }
+.transit-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+@media (max-width:600px) { .transit-grid { grid-template-columns:1fr; } }
+.transit-option { background:white; padding:10px 12px; border-radius:8px; border:1px solid #e2e8f0; }
+.transit-option strong { display:block; color:#1e293b; margin-bottom:3px; }
+.transit-meta { color:#2563eb; font-weight:600; font-size:0.85rem; }
+
+.expense-section { background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; padding:20px; margin-top:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04); }
+.expense-title { font-size:1.1rem; font-weight:800; color:#1e293b; margin-bottom:12px; }
+.expense-table { width:100%; border-collapse:collapse; font-size:0.9rem; }
+.expense-table th { background:#f1f5f9; color:#334155; font-weight:700; text-align:left; padding:10px 12px; border-bottom:2px solid #cbd5e1; }
+.expense-table td { padding:10px 12px; border-bottom:1px solid #e2e8f0; color:#1e293b; }
+.expense-table .amount { text-align:right; font-weight:700; color:#2563eb; white-space:nowrap; }
+.expense-table tr.subtotal-row { background:#eff6ff; font-weight:800; }
+.expense-table tr.subtotal-row td { border-top:2px solid #93c5fd; border-bottom:none; color:#1e3a8a; font-size:0.96rem; }
+
+
+</style>
+</head>
+<body>
+
+<div class="day-badge">📅 DAY 2 : 2026년 11월 30일 (월요일)</div>
+
+<div class="timeline">
+    <!-- 1. 아침 조식 (선택 일정) -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">09:30 ~ 10:50 (희망 인원만)</span>
+            <span class="cost-badge">예상 비용: 1인 약 600~1,700엔</span>
+        </div>
+        <div class="place-title">☕ 아침 조식 : 코메다커피 또는 콘파루 (미희망 시 숙소 휴식)</div>
+        <div class="place-desc">
+            • <strong>추천 1 (코메다커피 에스카점):</strong> 나고야역 지하상가 / 11시 전 음료 주문 시 <strong>오구라 토스트 무료</strong><br>
+            • <strong>추천 2 (콘파루 선로드점):</strong> 나고야역 지하상가 / 새우튀김 샌드위치 & 오구라 토스트<br>
+            • <strong>추천 3 (숙소 도보권):</strong> 킷사 시부야 (숙소 도보 7분 로컬 킷사텐)<br>
+            💡 안 드시는 가족분들은 숙소 휴식 후 <strong>11:05 택시 출발</strong>로 점심 식당에서 합류
+        </div>
+    </div>
+
+    <!-- 이동: 숙소 -> 스시 에도 후지 -->
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 숙소(Asobi Stay) → 스시 에도 후지 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 사쿠라도리선)</strong><span class="transit-meta">약 13분 (타이코도리역→나고야역 하차 도보 5분) / 4인 840엔</span></div>
+            <div class="transit-option"><strong>🚕 택시 (4인 가족 합류 시 추천)</strong><span class="transit-meta">약 7~8분 소요 / 1대 약 900~1,100엔</span></div>
+        </div>
+    </div>
+
+    <!-- 2. 점심: 스시 에도 후지 -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">11:30 예약(도착) ~ 13:00 출발</span>
+            <span class="cost-badge">예상 식비: 20,000엔 (코스 15,400엔+음료)</span>
+        </div>
+        <img src="https://unsplash.com" alt="스시 오마카세" class="place-img">
+        <div class="place-title">🍣 점심 : 스시 에도 후지 (Edo Fuji) [예약완료]</div>
+        <div class="place-desc">📍 아이치현 나고야시 나카무라구 메이에키 4-13-3 2층 / 🎫 <strong>예약번호: IR0553656167</strong> (성인 4명 × 3,850엔)</div>
+        <div class="menu-placeholder">📝 <strong>추가 주문 음료/메뉴 메모 공간</strong> (추후 추가 예정)</div>
+    </div>
+
+    <!-- 이동: 스시 에도 후지 -> 나고야성 -->
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 스시 에도 후지 → 나고야성 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 환승)</strong><span class="transit-meta">약 20분 (나고야조역 7번 출구 도보 5분) / 4인 960엔</span></div>
+            <div class="transit-option"><strong>🚕 택시 (4인 가족 추천)</strong><span class="transit-meta">약 10~12분 소요 / 1대 약 1,500~1,800엔</span></div>
+        </div>
+    </div>
+
+    <!-- 3. 나고야성 -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">13:15 도착 ~ 14:35 출발</span>
+            <span class="cost-badge">🎟️ 입장료: 4,000엔 (1,000엔 × 4인)</span>
+        </div>
+        <img src="https://unsplash.com" alt="나고야성" class="place-img">
+        <div class="place-title">🏯 나고야성 (혼마루 어전 관람)</div>
+        <div class="place-desc">📍 아이치현 나고야시 나카구 혼마루 1-1 / 금빛 병풍화가 복원된 혼마루 어전 핵심 관람</div>
+    </div>
+
+    <!-- 이동: 나고야성 -> 오아시스21 -->
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 나고야성 → 오아시스21 / 미라이타워 (사카에) 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 메이조선)</strong><span class="transit-meta">약 10분 (나고야조역→사카에역 4번 출구 직결) / 4인 840엔</span></div>
+            <div class="transit-option"><strong>🚕 택시</strong><span class="transit-meta">약 7~9분 소요 / 1대 약 1,100~1,300엔</span></div>
+        </div>
+    </div>
+
+    <!-- 4. 오아시스21 & 미라이타워 -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">14:45 도착 ~ 15:25 출발</span>
+            <span class="cost-badge">🎟️ 입장료: 무료</span>
+        </div>
+        <div class="place-title">🗼 오아시스21 & 추부전력 미라이타워</div>
+        <div class="place-desc">📍 사카에 중심 랜드마크 산책 및 기념사진 촬영 후 도보로 쇼핑 시작</div>
+    </div>
+
+    <!-- 5. 사카에 쇼핑 투어 -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">15:30 ~ 18:15 (도보 쇼핑 & 장어덮밥 연계)</span>
+            <span class="cost-badge">쇼핑/디저트 예상: 6,000엔</span>
+        </div>
+        <div class="place-title">🛍️ 사카에 핵심 쇼핑 투어 (최적 북→남 일직선 도보 경로)</div>
+        <div class="place-desc">
+            🚶 <strong>전 구간 도보 이동 (매장 간 1~5분 거리 / 교통비 0엔):</strong><br>
+            <strong>① 츄니치 빌딩 (몽벨)</strong> → (도보 3분) → <strong>② 라치크 (LACHIC)</strong> → (도보 2분) → <strong>③ 마츠자카야 남관 10층 (아츠타 호라이켄 대기표 수령)</strong> → (도보 1분) → <strong>④ 나고야 PARCO (하브스·PAMM·무인양품)</strong> → (도보 5분) → <strong>⑤ Alpen NAGOYA</strong> → (도보 4분) → <strong>⑥ LHP 나고야</strong><br><br>
+            🛒 <strong>무인양품 구매 리스트:</strong> 팬티10, 칫솔, 올인원 화장품, 잠옷, 장미수 미스트, 주방용품, 탑브라<br>
+            🍰 <strong>플랜 B:</strong> 장어덮밥 대기 길 경우 대기표 수령 후 PARCO 내 <strong>하브스(HARBS)</strong> 디저트 & 쇼핑 먼저 진행
+        </div>
+    </div>
+
+    <!-- 6. 아츠타 호라이켄 마츠자카야점 -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">16:30 저녁 1부 입장 추천 (유동적)</span>
+            <span class="cost-badge">예상 식비: 26,600엔 (4인)</span>
+        </div>
+        <img src="https://unsplash.com" alt="장어덮밥" class="place-img">
+        <div class="place-title">🍱 아츠타 호라이켄 마츠자카야점 (히츠마부시 장어덮밥)</div>
+        <div class="place-desc">📍 마츠자카야 남관 10층 / ⏳ <strong>월요일 웨이팅:</strong> 14:30~16:30 브레이크 타임이므로 <strong>16:00~16:15경 미리 올라가 저녁 1부(16:30) 정리권</strong>을 받으면 가장 빠르게 입장 가능</div>
+        <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
+    </div>
+
+    <!-- 이동: 사카에 -> 숙소 -->
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 사카에(파르코/야바초) → Asobi Stay 郷前町 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚇 대중교통 (지하철 환승)</strong><span class="transit-meta">약 22분 (야바초역→히사야오도리 환승→타이코도리역) / 4인 960엔</span></div>
+            <div class="transit-option"><strong>🚕 택시 (쇼핑 짐 보관 시 추천)</strong><span class="transit-meta">약 13~15분 소요 / 1대 약 1,800~2,200엔</span></div>
+        </div>
+    </div>
+
+    <!-- 7. 숙소 짐 보관 -->
+    <div class="event-card">
+        <div class="event-header"><span class="time-badge">18:30 도착 ~ 19:20 출발</span></div>
+        <div class="place-title">🏡 Asobi Stay 郷前町 (쇼핑 짐 내려놓기 & 휴식)</div>
+        <div class="place-desc">무거운 쇼핑백 보관 후 가벼운 차림으로 저녁 식사 출발</div>
+    </div>
+
+    <!-- 8. 라멘 / 우동 -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">19:35 도착 ~ 20:40 출발</span>
+            <span class="cost-badge">예상 식비: 5,700엔 (4인)</span>
+        </div>
+        <img src="https://unsplash.com" alt="일본 라멘" class="place-img">
+        <div class="place-title">🍜 라멘 / 우동 [식당 추후 지정 예정]</div>
+        <div class="place-desc">나고야역 또는 숙소 인근 맛집 방문 예정 (식당 확정 시 위치 및 이동시간 업데이트)</div>
+        <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
+    </div>
+
+    <!-- 이동: 라멘/우동(나고야역 기준) -> Yamatoya -->
+    <div class="transit-box">
+        <div class="transit-title">🗺️ 저녁(나고야역/숙소 인근) → Yamatoya(やまとや) 이동 비교</div>
+        <div class="transit-grid">
+            <div class="transit-option"><strong>🚶 도보 / 대중교통</strong><span class="transit-meta">숙소 기준 도보 약 7분 (0엔) / 나고야역 기준 지하철 10분 (4인 840엔)</span></div>
+            <div class="transit-option"><strong>🚕 택시</strong><span class="transit-meta">나고야역 기준 약 7분 소요 / 1대 약 900~1,100엔</span></div>
+        </div>
+    </div>
+
+    <!-- 9. 야키토리 : Yamatoya -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">21:00 도착 ~ 22:35 출발</span>
+            <span class="cost-badge">예상 식비: 7,000엔 (4인)</span>
+        </div>
+        <div class="place-title">🍢 야키토리 : Yamatoya (やまとや)</div>
+        <div class="place-desc">
+            📍 일본 〒453-0806 아이치현 나고야시 나카무라구 타이쇼초 3초메 7-2<br>
+            💡 <strong>장점:</strong> 평점 4.7의 현지 꼬치구이 전문점이며, <strong>숙소에서 도보 약 7분 거리</strong>라 늦은 밤 편하게 귀가 가능
+        </div>
+        <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
+    </div>
+
+    <!-- 10. 편의점 & 숙소 복귀 -->
+    <div class="event-card">
+        <div class="event-header">
+            <span class="time-badge">22:45 편의점 → 23:10 숙소 복귀</span>
+            <span class="cost-badge">예상 비용: 2,000엔</span>
+        </div>
+        <div class="place-title">🏪 숙소 인근 편의점 들른 후 Asobi Stay 郷前町 복귀</div>
+        <div class="place-desc">🚶 Yamatoya에서 편의점 경유 후 숙소까지 도보 약 7~10분 (교통비 0엔) / 야식·음료 구매 후 2일차 마무리</div>
+    </div>
+</div>
+
+<div class="expense-section">
+    <div class="expense-title">📊 DAY 2 (11/30) 목적별 상세 경비 (4인 기준)</div>
+    <table class="expense-table">
+        <thead>
+            <tr><th style="width:22%;">구분</th><th>상세 내역</th><th style="width:26%; text-align:right;">예상 금액</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>🍽️ 식비</strong></td><td>스시 에도후지(20,000) + 장어덮밥(26,600) + 라멘/우동(5,700) + Yamatoya(7,000) + 편의점(2,000)</td><td class="amount">61,300엔</td></tr>
+            <tr>
+                <td><strong>🚆 교통비</strong></td>
+                <td>
+                    • <strong>추천 혼합(지하철+짐 이동 시 택시): 약 5,000엔</strong><br>
+                    <span style="font-size:0.82rem; color:#64748b;">(전 구간 대중교통 시 약 3,600엔 / 전 구간 택시 시 약 6,500엔)</span>
+                </td>
+                <td class="amount">5,000엔</td>
+            </tr>
+            <tr><td><strong>🎟️ 티켓/입장료</strong></td><td>나고야성 입장료 (성인 1,000엔 × 4명)</td><td class="amount">4,000엔</td></tr>
+            <tr><td><strong>🛍️ 쇼핑/디저트</strong></td><td>하브스·무인양품 등 소액 예산 (면세 쇼핑 별도)</td><td class="amount">6,000엔</td></tr>
+            <tr class="subtotal-row"><td colspan="2">DAY 2 합계 (추천 이동 기준)</td><td class="amount" style="color:#1e3a8a;">76,300엔</td></tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+>>>>>>> 50f1a76670a2a0f6c269c99785160f6722ad275d

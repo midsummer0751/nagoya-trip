@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -196,4 +197,204 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
         </table>
         </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAY 3 - 12/01 나고야 일정</title>
+<style>
+* { box-sizing:border-box; margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",sans-serif; }
+body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
+.day-badge { display:inline-block; background:#2563eb; color:white; font-weight:bold; padding:6px 16px; border-radius:20px; font-size:0.95rem; margin-bottom:20px; }
+.timeline { position:relative; padding-left:28px; }
+.timeline::before { content:''; position:absolute; left:11px; top:8px; bottom:8px; width:3px; background:#cbd5e1; border-radius:2px; }
+.event-card { position:relative; background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:20px; margin-bottom:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03); }
+.event-card::before { content:''; position:absolute; left:-23px; top:24px; width:13px; height:13px; border-radius:50%; background:#2563eb; border:3px solid white; box-shadow:0 0 0 2px #2563eb; }
+.event-header { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
+.time-badge { background:#eff6ff; color:#2563eb; font-weight:700; padding:4px 10px; border-radius:8px; font-size:0.9rem; }
+.cost-badge { background:#fef3c7; color:#b45309; font-weight:700; padding:4px 10px; border-radius:8px; font-size:0.85rem; }
+.place-title { font-size:1.15rem; font-weight:700; margin-bottom:6px; }
+.place-desc { color:#64748b; font-size:0.92rem; margin-bottom:8px; }
+.menu-placeholder { border:1.5px dashed #94a3b8; background:#f8fafc; border-radius:10px; padding:10px 14px; color:#64748b; font-size:0.88rem; margin-top:8px; }
+.transit-box { background:#f1f5f9; border-left:4px solid #64748b; border-radius:10px; padding:14px 16px; margin-bottom:16px; font-size:0.88rem; }
+.transit-title { font-weight:700; color:#334155; margin-bottom:8px; }
+.transit-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+@media (max-width:600px) { .transit-grid { grid-template-columns:1fr; } }
+.transit-option { background:white; padding:10px 12px; border-radius:8px; border:1px solid #e2e8f0; }
+.transit-option strong { display:block; color:#1e293b; margin-bottom:3px; }
+.transit-meta { color:#2563eb; font-weight:600; font-size:0.85rem; }
+.timetable-box { background:#eff6ff; border-radius:8px; padding:10px 12px; margin-top:10px; font-size:0.85rem; }
+.timetable-box ul { margin-left:18px; margin-top:4px; color:#1e40af; }
+
+.expense-section { background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; padding:20px; margin-top:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04); }
+.expense-title { font-size:1.1rem; font-weight:800; color:#1e293b; margin-bottom:12px; }
+.expense-table { width:100%; border-collapse:collapse; font-size:0.9rem; }
+.expense-table th { background:#f1f5f9; color:#334155; font-weight:700; text-align:left; padding:10px 12px; border-bottom:2px solid #cbd5e1; }
+.expense-table td { padding:10px 12px; border-bottom:1px solid #e2e8f0; color:#1e293b; }
+.expense-table .amount { text-align:right; font-weight:700; color:#2563eb; white-space:nowrap; }
+.expense-table tr.subtotal-row { background:#eff6ff; font-weight:800; }
+.expense-table tr.subtotal-row td { border-top:2px solid #93c5fd; border-bottom:none; color:#1e3a8a; font-size:0.96rem; }
+</style>
+</head>
+<body>
+
+    <div class="day-badge">📅 DAY 3 : 2026년 12월 1일 (화요일)</div>
+
+    <div class="timeline">
+        <!-- 1. 어머님 병원 방문 & 가족 휴식 -->
+        <div class="event-card">
+            <div class="event-header">
+                <span class="time-badge">09:00 출발 ~ 10:45 숙소 복귀</span>
+            </div>
+            <div class="place-title">🏥 어머님 병원 진료 (09:30 예약) & 나머지 가족 숙소 휴식</div>
+            <div class="place-desc">
+                • 전날 일정으로 피로가 쌓이셨으므로 어머님 진료 동안 가족분들은 숙소에서 충분히 늦잠 및 휴식<br>
+                • 병원 이동 시 택시 이용 권장 (어머님 컨디션 보호) / 10:45 숙소 합류 후 11:00 외출 준비 완료
+            </div>
+        </div>
+
+        <!-- 이동: 숙소 -> 야바톤 야바초 본점 -->
+        <div class="transit-box">
+            <div class="transit-title">🗺️ 숙소(Asobi Stay) → 야바톤 야바초 본점 이동 비교</div>
+            <div class="transit-grid">
+                <div class="transit-option"><strong>🚇 대중교통 (지하철 환승)</strong><span class="transit-meta">약 22분 (타이코도리역→히사야오도리 환승→야바초역 4번 출구) / 4인 960엔</span></div>
+                <div class="transit-option"><strong>🚕 택시 (어머님 체력 배려 추천)</strong><span class="transit-meta">약 13~15분 소요 / 1대 약 1,800~2,100엔</span></div>
+            </div>
+        </div>
+
+        <!-- 2. 점심: 야바톤 -->
+        <div class="event-card">
+            <div class="event-header">
+                <span class="time-badge">11:25 도착 ~ 12:25 출발</span>
+                <span class="cost-badge">예상 식비: 9,200엔 (야바톤 기준)</span>
+            </div>
+            <div class="place-title">🐷 점심 : 야바톤 야바초 본점 (부모님 맞춤 추천)</div>
+            <div class="place-desc">
+                📍 아이치현 나고야시 나카구 오스 3-6-18 (야바초역 도보 3분)<br>
+                💡 <strong>선택 이유:</strong> 라무치이(파 산더미)보다 부모님 입맛에 부담 없는 나고야 정통 미소카츠 명가입니다. 수족관 공연(13:00)을 위해 11:25경 일찍 입장해 식사합니다.
+            </div>
+            <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
+        </div>
+
+        <!-- 이동: 야바톤 -> 나고야항 수족관 -->
+        <div class="transit-box">
+            <div class="transit-title">🗺️ 야바톤(야바초역) → 나고야항 수족관 이동 비교</div>
+            <div class="transit-grid">
+                <div class="transit-option"><strong>🚇 대중교통 (지하철 메이조선 직통 추천)</strong><span class="transit-meta">약 22분 (야바초역→나고야코역 3번 출구 도보 5분 / 환승 없음) / 4인 1,080엔</span></div>
+                <div class="transit-option"><strong>🚕 택시</strong><span class="transit-meta">약 20~25분 소요 / 1대 약 3,500~4,200엔</span></div>
+            </div>
+        </div>
+
+        <!-- 3. 나고야항 수족관 -->
+        <div class="event-card">
+            <div class="event-header">
+                <span class="time-badge">12:50 도착 ~ 15:00 출발</span>
+                <span class="cost-badge">🎟️ 입장료: 8,120엔 (성인 2,030엔 × 4명)</span>
+            </div>
+            <div class="place-title">🐬 나고야항 수족관 (정어리 + 돌고래 공연 핵심 코스)</div>
+            <div class="place-desc">
+                📍 아이치현 나고야시 미나토구 미나토마치 1-3 (엘리베이터 위주 이동으로 부모님 무릎 부담 최소화)
+            </div>
+            <div class="timetable-box">
+                <strong>🕒 오후 공연 관람 최적 타임테이블</strong>
+                <ul>
+                    <li><strong>13:00 ~ 13:05 : 정어리 토네이도</strong> (남관 2F / 구로시오 대수조)</li>
+                    <li><strong>13:10 ~ 13:25 :</strong> 북관 3F 스타디움으로 이동 및 착석 (15분 전 착석 권장)</li>
+                    <li><strong>13:30 ~ 13:50 : 돌고래 퍼포먼스 BLUE ECHO</strong> (북관 3F / 메인 스타디움)</li>
+                    <li><strong>13:55 ~ 15:00 :</strong> 벨루가·펭귄·거북이 수조 여유롭게 관람 후 퇴장</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 이동: 나고야항 수족관 -> 오스 관음사 / 오스 상점가 -->
+        <div class="transit-box">
+            <div class="transit-title">🗺️ 나고야항 수족관 → 오스 관음사 & 오스 상점가 이동 비교</div>
+            <div class="transit-grid">
+                <div class="transit-option"><strong>🚇 대중교통 (지하철 메이조선 직통 추천)</strong><span class="transit-meta">약 18분 (나고야코역→가미마에즈역 8번 출구 바로 앞 / 환승 없음) / 4인 960엔</span></div>
+                <div class="transit-option"><strong>🚕 택시</strong><span class="transit-meta">약 18~22분 소요 / 1대 약 3,000~3,600엔</span></div>
+            </div>
+        </div>
+
+        <!-- 4. 오스 관음사 & 오스 상점가 가을 산책 및 쇼핑 -->
+        <div class="event-card">
+            <div class="event-header">
+                <span class="time-badge">15:25 도착 ~ 18:55 출발</span>
+                <span class="cost-badge">간식/쇼핑 예산: 개인별 (입장료 무료)</span>
+            </div>
+            <div class="place-title">🍁 오스 관음사 가을 산책 & 오스 상점가 투어</div>
+            <div class="place-desc">
+                • <strong>① 가을 사찰 산책 (15:30~16:10):</strong> 늦가을 단풍이 어우러진 <strong>오스 관음사</strong> 참배 및 기념사진 촬영<br>
+                • <strong>② 부모님 간식 & 티타임 (16:10~17:30):</strong> 지붕이 있어 바람을 막아주는 오스 아케이드 상점가에서 당고, 다이야키(붕어빵), 고구마 간식, 가라아게 등 취향껏 즐기기<br>
+                • <strong>③ 편집숍 쇼핑 (17:30~18:50):</strong> 오스·사카에 인근 <strong>KAPITAL, 나나미카(nanamica), FRESH SERVICE</strong> 구경
+            </div>
+        </div>
+
+        <!-- 이동: 오스/사카에 -> 이부시긴 메이키 니시구치점 -->
+        <div class="transit-box">
+            <div class="transit-title">🗺️ 오스 상점가 → 이부시긴 메이키 니시구치점(나고야역 서쪽) 이동 비교</div>
+            <div class="transit-grid">
+                <div class="transit-option"><strong>🚇 대중교통 (지하철 쓰루마이선→사쿠라도리선)</strong><span class="transit-meta">약 16분 (오스칸논역→후시미 환승→나고야역 서쪽 출구 도보 3분) / 4인 840엔</span></div>
+                <div class="transit-option"><strong>🚕 택시 (4인 가족 이동 추천)</strong><span class="transit-meta">약 10~12분 소요 / 1대 약 1,400~1,700엔</span></div>
+            </div>
+        </div>
+
+        <!-- 5. 저녁: 이부시긴 메이키 니시구치점 -->
+        <div class="event-card">
+            <div class="event-header">
+                <span class="time-badge">19:30 예약(도착) ~ 21:00 출발</span>
+                <span class="cost-badge">예상 식비: 20,000엔 (4인)</span>
+            </div>
+            <div class="place-title">🔥 저녁 : 로바타야키 이부시긴 메이키 니시구치점 (19:30 예약 확정)</div>
+            <div class="place-desc">
+                📍 아이치현 나고야시 나카무라구 쓰바키초 10-22 (나고야역 신칸센 출구 인근)<br>
+                ✅ <strong>선택 이유:</strong> 사카에점(20:00) 대신 이 지점을 이용하면 <strong>식사 후 숙소까지 택시로 5분 거리</strong>라 교통비와 부모님 체력을 크게 아낄 수 있습니다. (※ 사카에점 20:00 예약은 취소 권장)
+            </div>
+            <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
+        </div>
+
+        <!-- 이동: 이부시긴 -> 편의점 -> 숙소 -->
+        <div class="transit-box">
+            <div class="transit-title">🗺️ 이부시긴(나고야역 서쪽) → Asobi Stay 郷前町 복귀 이동 비교</div>
+            <div class="transit-grid">
+                <div class="transit-option"><strong>🚇 대중교통 (지하철 사쿠라도리선)</strong><span class="transit-meta">약 10분 (나고야역→타이코도리역 하차 도보 4분) / 4인 840엔</span></div>
+                <div class="transit-option"><strong>🚕 택시 (가장 빠르고 저렴 / 강력 추천)</strong><span class="transit-meta">약 5~6분 소요 / 1대 약 700~900엔 (4인 지하철 요금과 동일)</span></div>
+            </div>
+        </div>
+
+        <!-- 6. 편의점 및 숙소 복귀 -->
+        <div class="event-card">
+            <div class="event-header">
+                <span class="time-badge">21:10 편의점 → 21:30 숙소 복귀</span>
+                <span class="cost-badge">예상 비용: 2,000엔</span>
+            </div>
+            <div class="place-title">🏪 숙소 인근 편의점 들른 후 Asobi Stay 郷前町 휴식</div>
+        </div>
+
+
+        <div class="expense-section">
+        <div class="expense-title">📊 DAY 3 (12/01) 목적별 상세 경비 (4인 기준)</div>
+        <table class="expense-table">
+            <thead>
+                <tr><th style="width:22%;">구분</th><th>상세 내역</th><th style="width:26%; text-align:right;">예상 금액</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>🍽️ 식비</strong></td><td>야바톤 점심(9,200) + 이부시긴 저녁(20,000) + 편의점(2,000) + 간식 별도</td><td class="amount">31,200엔</td></tr>
+                <tr>
+                    <td><strong>🚆 교통비</strong></td>
+                    <td>
+                        • <strong>추천 혼합(지하철 직통+단거리 택시): 약 6,500엔</strong><br>
+                        <span style="font-size:0.82rem; color:#64748b;">(전 구간 대중교통 시 약 4,700엔 / 전 구간 택시 시 약 11,500엔)</span>
+                    </td>
+                    <td class="amount">6,500엔</td>
+                </tr>
+                <tr><td><strong>🎟️ 티켓/입장료</strong></td><td>나고야항 수족관 (성인 2,030엔 × 4명)</td><td class="amount">8,120엔</td></tr>
+                <tr><td><strong>🛍️ 쇼핑/간식</strong></td><td>오스 상점가 간식 및 편집숍 쇼핑 (개인별 예산)</td><td class="amount">별도</td></tr>
+                <tr class="subtotal-row"><td colspan="2">DAY 3 합계 (추천 이동 기준)</td><td class="amount" style="color:#1e3a8a;">45,820엔</td></tr>
+            </tbody>
+        </table>
+        </div>
+</body>
+>>>>>>> 50f1a76670a2a0f6c269c99785160f6722ad275d
 </html> 
