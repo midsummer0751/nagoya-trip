@@ -36,6 +36,10 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
 .expense-table tr.subtotal-row { background:#eff6ff; font-weight:800; }
 .expense-table tr.subtotal-row td { border-top:2px solid #93c5fd; border-bottom:none; color:#1e3a8a; font-size:0.96rem; }
 
+/* 구글 지도 바로가기 버튼 스타일 */
+.map-btn-group { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+.map-btn { display:inline-flex; align-items:center; gap:6px; background:#f8fafc; border:1px solid #cbd5e1; color:#1e293b; text-decoration:none; font-size:0.84rem; font-weight:700; padding:7px 12px; border-radius:8px; transition:all 0.15s; }
+.map-btn:hover { background:#eff6ff; border-color:#2563eb; color:#2563eb; }
 
 </style>
 </head>
@@ -74,7 +78,6 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
             <span class="time-badge">11:30 예약(도착) ~ 13:00 출발</span>
             <span class="cost-badge">예상 식비: 20,000엔 (코스 15,400엔+음료)</span>
         </div>
-        <img src="https://unsplash.com" alt="스시 오마카세" class="place-img">
         <div class="place-title">🍣 점심 : 스시 에도 후지 (Edo Fuji) [예약완료]</div>
         <div class="place-desc">📍 아이치현 나고야시 나카무라구 메이에키 4-13-3 2층 / 🎫 <strong>예약번호: IR0553656167</strong> (성인 4명 × 3,850엔)</div>
         <div class="menu-placeholder">📝 <strong>추가 주문 음료/메뉴 메모 공간</strong> (추후 추가 예정)</div>
@@ -95,7 +98,6 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
             <span class="time-badge">13:15 도착 ~ 14:35 출발</span>
             <span class="cost-badge">🎟️ 입장료: 4,000엔 (1,000엔 × 4인)</span>
         </div>
-        <img src="https://unsplash.com" alt="나고야성" class="place-img">
         <div class="place-title">🏯 나고야성 (혼마루 어전 관람)</div>
         <div class="place-desc">📍 아이치현 나고야시 나카구 혼마루 1-1 / 금빛 병풍화가 복원된 혼마루 어전 핵심 관람</div>
     </div>
@@ -140,7 +142,6 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
             <span class="time-badge">16:30 저녁 1부 입장 추천 (유동적)</span>
             <span class="cost-badge">예상 식비: 26,600엔 (4인)</span>
         </div>
-        <img src="https://unsplash.com" alt="장어덮밥" class="place-img">
         <div class="place-title">🍱 아츠타 호라이켄 마츠자카야점 (히츠마부시 장어덮밥)</div>
         <div class="place-desc">📍 마츠자카야 남관 10층 / ⏳ <strong>월요일 웨이팅:</strong> 14:30~16:30 브레이크 타임이므로 <strong>16:00~16:15경 미리 올라가 저녁 1부(16:30) 정리권</strong>을 받으면 가장 빠르게 입장 가능</div>
         <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
@@ -168,7 +169,6 @@ body { background:transparent; color:#1e293b; line-height:1.6; padding:4px; }
             <span class="time-badge">19:35 도착 ~ 20:40 출발</span>
             <span class="cost-badge">예상 식비: 5,700엔 (4인)</span>
         </div>
-        <img src="https://unsplash.com" alt="일본 라멘" class="place-img">
         <div class="place-title">🍜 라멘 / 우동 [식당 추후 지정 예정]</div>
         <div class="place-desc">나고야역 또는 숙소 인근 맛집 방문 예정 (식당 확정 시 위치 및 이동시간 업데이트)</div>
         <div class="menu-placeholder">📝 <strong>주문 예정 메뉴 메모 공간</strong> (추후 추가 예정)</div>
